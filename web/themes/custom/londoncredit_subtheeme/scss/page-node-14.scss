@@ -1,0 +1,144 @@
+.page-node-14 {
+  .homepage-header {
+    position: relative;
+
+    .title-subtitle-scroll {
+      position: absolute;
+      z-index: 99;
+      // transform: translate(10%);
+      bottom: 15%;
+      top: unset;
+
+      .field--name-field-title {
+        font-family: "Open Sans Condensed";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 109px;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+
+      .field--name-field-subtitle {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 34px;
+        color: #ffffff;
+        margin-bottom: 77px;
+        margin-top: 30px;
+      }
+
+      #block-scroll2 {
+        button {
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          background: #ee3224;
+          border: none;
+          scroll-behavior: smooth;
+
+          &:hover {
+            background-color: #f4f4f4;
+          }
+          a {
+            text-decoration: none;
+            scroll-behavior: smooth;
+
+            &::before {
+              content: "\f107";
+              font-family: "Font Awesome 5 Free";
+              font-style: normal;
+              font-weight: 900;
+              font-size: 12px;
+              line-height: 14px;
+              letter-spacing: 1.25px;
+              text-transform: uppercase;
+              color: #ffffff;
+            }
+            &:hover {
+              &::before {
+                content: "\f107";
+                font-family: "Font Awesome 5 Free";
+                font-style: normal;
+                font-weight: 900;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 1.25px;
+                text-transform: uppercase;
+
+                color: #494949;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .page-node-14 {
+    .homepage-header {
+      position: relative;
+
+      .title-subtitle-scroll {
+        position: absolute;
+        z-index: 99;
+        // top: 50%;
+        bottom: 7%;
+
+        .field--name-field-title {
+          font-family: "Open Sans Condensed";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 58px;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+
+        .field--name-field-subtitle {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 16px;
+          color: #ffffff;
+          margin-bottom: 77px;
+          margin-top: 30px;
+        }
+      }
+      .field--name-field-media-video-file {
+        position: relative;
+        margin: 0;
+        &::before {
+          content: "";
+          background: linear-gradient(
+            0deg,
+            rgba(2, 2, 2, 0.64),
+            rgba(2, 2, 2, 0.64)
+          );
+          position: absolute;
+
+          width: 100%;
+          height: 100vh;
+          display: block;
+          z-index: 0;
+        }
+        img {
+          width: 100%;
+          height: 100vh;
+          object-fit: cover;
+          margin: 0;
+        }
+
+        video {
+          width: 100vw;
+          height: 100vh;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

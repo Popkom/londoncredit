@@ -28,6 +28,7 @@
         "drupal/paragraphs": "^1.14",
         "drupal/recaptcha": "^3.0",
         "drupal/superfish": "^1.4",
+        "drupal/twig_tweak": "^3.1",
         "drupal/viewsreference": "^1.8",
         "drupal/webform": "^6.1",
         "drush/drush": "^11.0"
