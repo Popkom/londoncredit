@@ -47,20 +47,24 @@
   ]
 %}
 {% block paragraph %}
-	<div id="table-inner">
-		<div{{attributes.addClass(classes)}}>
-			{% block content %}
+	<div{{attributes.addClass(classes)}}>
+		{% block content %}
+			<div id="introducer-form">
 				<div class="row m-0">
-					<div class="table-inner">
+
+					<div class="title-subtitle col-lg-10 offset-lg-1 col-xl-5 offset-xl-1">
 						<div class="title">
-							{{ content.field_title}}
+							{{ content.field_title }}
 						</div>
 						<div class="subtitle">
-							{{ content.field_subtitle}}
+							{{ content.field_subtitle }}
 						</div>
+					</div>
+					<div class="form col-lg-10 offset-lg-1 col-xl-5 offset-xl-0">
+						{{ content.field_form }}
 					</div>
 				</div>
 			</div>
 		</div>
-	{% endblock %}
-</div>{% endblock paragraph %}
+	</div>
+</div>{% endblock %}</div>{% endblock paragraph %}

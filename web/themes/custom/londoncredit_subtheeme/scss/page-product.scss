@@ -1,0 +1,138 @@
+.node--type-product {
+  .homepage-header {
+    position: relative;
+    .title-subtitle-scroll {
+      position: absolute;
+      z-index: 99;
+      top: 0;
+      .subtitle-title {
+        text-align: end;
+        margin-right: 48px;
+        .field--name-title {
+          font-family: "Open Sans Condensed";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 80px;
+          line-height: 109px;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+        .field--name-field-subtitle {
+          font-family: "Open Sans Condensed Light";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 30px;
+          color: #ffffff;
+          text-transform: uppercase;
+        }
+      }
+      .field--name-field-back-to-home {
+        margin-top: 8rem;
+        margin-bottom: 2rem;
+        display: flex;
+        border-bottom: 1px solid rgba(244, 244, 244, 0.32);
+        z-index: 999999;
+        width: 80vw;
+        a {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          display: flex;
+          align-items: center;
+          color: #ffffff;
+          padding-top: 5px;
+          text-decoration: none;
+          padding-bottom: 28px;
+
+          &::before {
+            content: "\f053";
+            font-family: "Font Awesome 5 Free";
+            font-style: normal;
+            font-weight: 900;
+            font-size: 8px;
+            line-height: 9px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 1.25px;
+            text-transform: uppercase;
+            color: #ffffff;
+            background: #ee3224;
+            border-radius: 50%;
+            padding: 12px 14px;
+            margin-right: 12px;
+          }
+          &:hover {
+            &::before {
+              content: "\f053";
+              font-family: "Font Awesome 5 Free";
+              font-style: normal;
+              font-weight: 900;
+              font-size: 8px;
+              line-height: 9px;
+              display: flex;
+              align-items: center;
+              text-align: center;
+              letter-spacing: 1.25px;
+              text-transform: uppercase;
+              background-color: #f4f4f4;
+              color: #494949;
+              border-radius: 50%;
+              padding: 12px 14px;
+              margin-right: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .node--type-product {
+    .homepage-header {
+      .title-subtitle-scroll {
+        right: 10px !important;
+      }
+    }
+  }
+}
+@media (max-width: 1224px) {
+  .node--type-product {
+    .field--name-field-back-to-home {
+      width: 100%;
+    }
+    .homepage-header {
+      position: relative;
+      .title-subtitle-scroll {
+        position: absolute;
+        z-index: 99;
+        top: 0;
+        right: 80px;
+        .subtitle-title {
+          text-align: end;
+          margin-right: 0;
+          .field--name-title {
+            font-family: "Open Sans Condensed";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 58px;
+            text-transform: uppercase;
+            color: #ffffff;
+          }
+          .field--name-field-subtitle {
+            font-family: "Open Sans Condensed Light";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 15px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

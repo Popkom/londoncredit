@@ -47,20 +47,13 @@
   ]
 %}
 {% block paragraph %}
-	<div id="table-inner">
-		<div{{attributes.addClass(classes)}}>
-			{% block content %}
-				<div class="row m-0">
-					<div class="table-inner">
-						<div class="title">
-							{{ content.field_title}}
-						</div>
-						<div class="subtitle">
-							{{ content.field_subtitle}}
-						</div>
-					</div>
+	<div{{attributes.addClass(classes)}}>
+		{% block content %}
+			<div id="table-pa">
+				<div class="table-pa">
+					{{ content.field_product_table_inner}}
 				</div>
 			</div>
-		</div>
-	{% endblock %}
-</div>{% endblock paragraph %}
+		{% endblock %}
+	</div>
+{% endblock paragraph %}

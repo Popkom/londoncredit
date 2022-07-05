@@ -47,20 +47,36 @@
   ]
 %}
 {% block paragraph %}
-	<div id="table-inner">
-		<div{{attributes.addClass(classes)}}>
-			{% block content %}
+	<div{{attributes.addClass(classes)}}>
+		{% block content %}
+			<div id="image-right">
 				<div class="row m-0">
-					<div class="table-inner">
-						<div class="title">
-							{{ content.field_title}}
-						</div>
+
+					<div class="back-to-all offset-md-1 col-md-10">
+						{{ content.field_link}}
+					</div>
+
+					<div class="title-subtitle col-md-10 offset-md-1 col-lg-5 offset-lg-1">
+
+
 						<div class="subtitle">
-							{{ content.field_subtitle}}
+							{{ content.field_subtitle }}
 						</div>
+						<div class="title">
+							{{ content.field_title }}
+						</div>
+					</div>
+					<div class="body-link col-md-10 offset-md-1 col-lg-5 offset-lg-0">
+						<div class="image">
+							{{ content.field_image }}
+						</div>
+						<div class="body">
+							{{ content.field_body }}
+						</div>
+
 					</div>
 				</div>
 			</div>
 		</div>
-	{% endblock %}
-</div>{% endblock paragraph %}
+	</div>
+{% endblock %}</div>{% endblock paragraph %}

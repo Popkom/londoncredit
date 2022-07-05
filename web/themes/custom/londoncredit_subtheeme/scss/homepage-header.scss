@@ -1,0 +1,36 @@
+.main-content.col {
+  padding-left: 0;
+  padding-right: 0;
+}
+.homepage-header {
+  position: relative;
+  .field--name-field-prod-cover {
+    position: relative;
+    margin: 0;
+    &::before {
+      content: "";
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 2, 0.64),
+        rgba(2, 2, 2, 0.64)
+      );
+      position: absolute;
+
+      width: 100%;
+      height: 100vh;
+      display: block;
+      z-index: 0;
+    }
+    img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      margin: 0;
+    }
+    video {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+}
