@@ -1,0 +1,102 @@
+.site-footer {
+  background: #002d62 !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  .region-footer-first {
+    margin-top: 64px;
+    margin-bottom: 48px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  h2 {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+  }
+  .nav-link {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    padding: 0;
+    margin: 8px 0px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  #block-home,
+  #block-products,
+  #block-importantpages {
+    .clearfix.nav {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  #block-socialmedialinks {
+    .social-media-links--platforms.horizontal li {
+      padding: 0;
+      padding-right: 8px;
+    }
+    a {
+      font-family: "Font Awesome 5 Brands";
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23px;
+      color: #ffffff;
+      background: #ee3224;
+      border-radius: 4px;
+      width: 40px;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      span {
+        font-size: 20px;
+      }
+      &:hover {
+        color: #002d62;
+        background-color: #ffffff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+#block-footerblock {
+  > .content {
+    border-top: 1px solid #f8f8f8;
+    padding-top: 16px;
+    padding-bottom: 0;
+  }
+  .field--name-body {
+    display: flex;
+    justify-content: space-between;
+    p {
+      opacity: 0.6;
+      width: 100%;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      letter-spacing: 0.25px;
+      color: rgba(255, 255, 255, 0.64);
+      &:last-child {
+        text-align: right;
+        a {
+          font-weight: 900;
+          color: #ffffff;
+        }
+        @media (max-width: 992px) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

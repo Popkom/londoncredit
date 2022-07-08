@@ -1,0 +1,70 @@
+.paragraph--type--title-and-scroll {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  height: 502px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    height: 0px;
+  }
+  #title-and-scroll {
+    .row {
+      margin-right: 0;
+    }
+  }
+  .title-subtitle {
+    position: sticky;
+    height: 100%;
+    top: 0;
+    @media (max-width: 1224px) {
+      position: relative;
+    }
+  }
+  .title {
+    font-family: "Open Sans Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 109px;
+    text-transform: uppercase;
+    color: #002d62;
+  }
+  .subtitle {
+    font-family: "Open Sans Condensed Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    align-items: center;
+    text-transform: uppercase;
+    color: #494949;
+  }
+  .body-scroll {
+    counter-reset: my-sec-counter;
+    .field--name-field-benefits-list {
+      .field__item {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #494949;
+        border-bottom: 1px solid rgba(73, 73, 73, 0.32);
+        padding-bottom: 48px;
+        padding-top: 48px;
+        &::before {
+          counter-increment: my-sec-counter;
+          content: counter(my-sec-counter, decimal-leading-zero);
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 16px;
+          line-height: 24px;
+          color: #002d62;
+          margin-right: 24px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'b2c376e1e6966d054bef689a4265161ba3fcca97',
+        'reference' => 'a770d04d705731e4975e55cc702274eaf5f5d44d',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -213,6 +213,15 @@
             'replaced' => array(
                 0 => '9.4.0',
             ),
+        ),
+        'drupal/blazy' => array(
+            'pretty_version' => '2.13.0',
+            'version' => '2.13.0.0',
+            'reference' => '8.x-2.13',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/blazy',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'drupal/block' => array(
             'dev_requirement' => false,
@@ -829,7 +838,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'b2c376e1e6966d054bef689a4265161ba3fcca97',
+            'reference' => 'a770d04d705731e4975e55cc702274eaf5f5d44d',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -876,6 +885,33 @@
             'replaced' => array(
                 0 => '9.4.0',
             ),
+        ),
+        'drupal/slick' => array(
+            'pretty_version' => '2.6.0',
+            'version' => '2.6.0.0',
+            'reference' => '8.x-2.6',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/slick',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/slick_views' => array(
+            'pretty_version' => '2.6.0',
+            'version' => '2.6.0.0',
+            'reference' => '8.x-2.6',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/slick_views',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/social_media_links' => array(
+            'pretty_version' => '2.8.0',
+            'version' => '2.8.0.0',
+            'reference' => '8.x-2.8',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/social_media_links',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'drupal/sqlite' => array(
             'dev_requirement' => false,

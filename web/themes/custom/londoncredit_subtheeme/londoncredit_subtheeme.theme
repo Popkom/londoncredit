@@ -29,4 +29,18 @@ function londoncredit_subtheeme_form_system_theme_settings_alter(&$form, FormSta
     'bg-white' => t('White'),
     'bg-transparent' => t('Transparent'),
   );
+
+  function londoncredit_subtheeme_suggestions_views_view_alter(array &$suggestions, array $vars) 
+{
+    $suggestions = [];
+    $view = $vars['view'];
+
+    $suggestions[] = 'views_view__' . $view->id();
+    $suggestions[] = 'views_view__' . $view->current_display;
+    $suggestions[] = 'views_view__' . $view->id() . '__' . $view->current_display;
+
+    return $suggestions;
+}
+
+
 }
